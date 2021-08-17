@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=FunctionsChallenge
+comment0.text=\n\ Write\ a\ description\ of\ class\ FunctionsChallenge\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=a\ b
+comment1.target=int\ sumDouble(int,\ int)
+comment1.text=\n\ \ \ \ sumDouble\n\n\ \ \ \ Instructions\:\n\ \ \ \ Given\ two\ int\ values,\ return\ their\ sum.\ Unless\ the\ two\ values\ are\ the\ same,\n\ \ \ \ then\ return\ double\ their\ sum.\n\n\ \ \ \ Examples\:\n\ \ \ \ sumDouble(1,\ 2)\ \u2192\ 3\n\ \ \ \ sumDouble(3,\ 2)\ \u2192\ 5\n\ \ \ \ sumDouble(2,\ 2)\ \u2192\ 8\n\n
+comment2.params=a\ b
+comment2.target=boolean\ makes10(int,\ int)
+comment2.text=\n\ \ \ \ makes10\n\n\ \ \ \ Instructions\:\n\ \ \ \ Given\ 2\ ints,\ a\ and\ b,\ return\ true\ if\ one\ if\ them\ is\ 10\ or\ if\ their\ sum\ is\ 10.\n\n\ \ \ \ Examples\:\n\ \ \ \ makes10(9,\ 10)\ \u2192\ true\n\ \ \ \ makes10(9,\ 9)\ \u2192\ false\n\ \ \ \ makes10(1,\ 9)\ \u2192\ true\n\n
+comment3.params=talking\ hour
+comment3.target=boolean\ parrotTrouble(boolean,\ int)
+comment3.text=\n\ \ \ \ parrotTrouble\n\n\ \ \ \ Instructions\:\n\ \ \ \ We\ have\ a\ loud\ talking\ parrot.\ The\ "talking"\ parameter\ is\ a\ boolean\ that\n\ \ \ \ represents\ if\ the\ parrot\ is\ talking.\ The\ "hour"\ parameter\ is\ the\ current\ hour\n\ \ \ \ time\ in\ the\ range\ 0..23.\ We\ are\ in\ trouble\ if\ the\ parrot\ is\ talking\ and\ the\ hour\n\ \ \ \ is\ before\ 7\ or\ after\ 20.\ Return\ true\ if\ we\ are\ in\ trouble.\n\n\ \ \ \ Examples\:\n\ \ \ \ parrotTrouble(true,\ 6)\ \u2192\ true\n\ \ \ \ parrotTrouble(true,\ 7)\ \u2192\ false\n\ \ \ \ parrotTrouble(false,\ 6)\ \u2192\ false\n
+comment4.params=day\ vacation
+comment4.target=java.lang.String\ alarmClock(int,\ boolean)
+comment4.text=\n\ \ \ \ alarmClock\n\n\ \ \ \ Instructions\:\n\ \ \ \ Given\ a\ day\ of\ the\ week\ encoded\ as\ 0\=Sun,\ 1\=Mon,\ 2\=Tue,\ ...6\=Sat,\ and\ a\ boolean\n\ \ \ \ indicating\ if\ we\ are\ on\ vacation,\ return\ a\ string\ of\ the\ form\ "7\:00"\ indicating\n\ \ \ \ when\ the\ alarm\ clock\ should\ ring.\ Weekdays,\ the\ alarm\ should\ be\ "7\:00"\ and\ on\n\ \ \ \ the\ weekend\ it\ should\ be\ "10\:00".\ Unless\ we\ are\ on\ vacation\ --\ then\ on\ weekdays\n\ \ \ \ it\ should\ be\ "10\:00"\ and\ weekends\ it\ should\ be\ "off".\n\n\ \ \ \ Examples\:\n\ \ \ \ alarmClock(1,\ false)\ \u2192\ "7\:00"\n\ \ \ \ alarmClock(6,\ true)\ \u2192\ "off"\n\ \ \ \ alarmClock(0,\ false)\ \u2192\ "10\:00"\n
+comment5.params=speed\ isBirthday
+comment5.target=int\ caughtSpeeding(int,\ boolean)
+comment5.text=\n\ \ \ \ caughtSpeeding\n\n\ \ \ \ Instructions\:\n\ \ \ \ You\ are\ driving\ a\ little\ too\ fast,\ and\ a\ police\ officer\ stops\ you.\ Write\ code\n\ \ \ \ to\ compute\ the\ result,\ encoded\ as\ a\ number\ value\:\ 0\=no\ ticket,\ 1\=small\ ticket,\n\ \ \ \ 2\=big\ ticket.\ If\ speed\ is\ 60\ or\ less,\ the\ result\ is\ 0.\ If\ speed\ is\ between\ 61\n\ \ \ \ and\ 80\ inclusive,\ the\ result\ is\ 1.\ If\ speed\ is\ 81\ or\ more,\ the\ result\ is\ 2.\n\ \ \ \ Unless\ it\ is\ your\ birthday\ --\ on\ that\ day,\ your\ speed\ can\ be\ 5\ higher\ in\ all\n\ \ \ \ cases.\n\n\ \ \ \ Examples\:\n\ \ \ \ caughtSpeeding(60,\ false)\ \u2192\ 0\n\ \ \ \ caughtSpeeding(65,\ false)\ \u2192\ 1\n\ \ \ \ caughtSpeeding(65,\ true)\ \u2192\ 0\n
+numComments=6
