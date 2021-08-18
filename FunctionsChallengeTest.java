@@ -1,27 +1,23 @@
 
+
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
-
-import java.io.*;
 
 /**
- * The test class TestFunctionsChallenge.
+ * The test class FunctionsChallengeTest.
  *
  * @author  (your name)
  * @version (a version number or a date)
  */
-public class TestFunctionsChallenge
+public class FunctionsChallengeTest
 {
 
     /**
-     * Default constructor for test class TestFunctionsChallenge
+     * Default constructor for test class FunctionsChallengeTest
      */
-    public TestFunctionsChallenge()
+    public FunctionsChallengeTest()
     {
     }
 
@@ -46,34 +42,34 @@ public class TestFunctionsChallenge
     }
 
     @Test
-    public void test_sumDouble()
+    public void sumDoubleTest()
     {
-        assertEquals(FunctionsChallenge.sumDouble(1, 2), 3);
-        assertEquals(FunctionsChallenge.sumDouble(3, 2), 5);
-        assertEquals(FunctionsChallenge.sumDouble(2, 2), 8);
-        assertEquals(FunctionsChallenge.sumDouble(-1, 0), -1);
-        assertEquals(FunctionsChallenge.sumDouble(3, 3), 12);
-        assertEquals(FunctionsChallenge.sumDouble(0, 0), 0);
-        assertEquals(FunctionsChallenge.sumDouble(0, 1), 1);
-        assertEquals(FunctionsChallenge.sumDouble(3, 4), 7);
+        assertEquals(3, FunctionsChallenge.sumDouble(1, 2));
+        assertEquals(5, FunctionsChallenge.sumDouble(3, 2));
+        assertEquals(8, FunctionsChallenge.sumDouble(2, 2));
+        assertEquals(-1, FunctionsChallenge.sumDouble(-1, 0));
+        assertEquals(12, FunctionsChallenge.sumDouble(3, 3));
+        assertEquals(0, FunctionsChallenge.sumDouble(0, 0));
+        assertEquals(1, FunctionsChallenge.sumDouble(0, 1));
+        assertEquals(7, FunctionsChallenge.sumDouble(3, 4));
     }
 
     @Test
-    public void test_makes10()
+    public void makes10Test()
     {
-        assertEquals(FunctionsChallenge.makes10(9, 10), true);
-        assertEquals(FunctionsChallenge.makes10(9, 9), false);
-        assertEquals(FunctionsChallenge.makes10(1, 9), true);
-        assertEquals(FunctionsChallenge.makes10(10, 1), true);
-        assertEquals(FunctionsChallenge.makes10(10, 10), true);
-        assertEquals(FunctionsChallenge.makes10(8, 2), true);
-        assertEquals(FunctionsChallenge.makes10(8, 3), false);
-        assertEquals(FunctionsChallenge.makes10(10, 42), true);
-        assertEquals(FunctionsChallenge.makes10(12, -2), true);
+        assertEquals(true, FunctionsChallenge.makes10(9, 10));
+        assertEquals(false, FunctionsChallenge.makes10(9, 9));
+        assertEquals(true, FunctionsChallenge.makes10(1, 9));
+        assertEquals(true, FunctionsChallenge.makes10(10, 1));
+        assertEquals(true, FunctionsChallenge.makes10(10, 10));
+        assertEquals(true, FunctionsChallenge.makes10(8, 2));
+        assertEquals(false, FunctionsChallenge.makes10(8, 3));
+        assertEquals(true, FunctionsChallenge.makes10(10, 42));
+        assertEquals(true, FunctionsChallenge.makes10(12, -2));
     }
 
     @Test
-    public void test_parrotTrouble() 
+    public void parrotTroubleTest() 
     {
         assertEquals(true, FunctionsChallenge.parrotTrouble(true, 6));
         assertEquals(false, FunctionsChallenge.parrotTrouble(true, 7));
@@ -88,7 +84,7 @@ public class TestFunctionsChallenge
     }
 
     @Test
-    public void test_alarmClock() 
+    public void alarmClockTest() 
     {
         assertEquals("7:00", FunctionsChallenge.alarmClock(1, false));
         assertEquals("7:00", FunctionsChallenge.alarmClock(5, false));
@@ -102,7 +98,7 @@ public class TestFunctionsChallenge
     }
 
     @Test
-    public void test_caughtSpeeding() 
+    public void caughtSpeedingTest() 
     {
         assertEquals(0, FunctionsChallenge.caughtSpeeding(60, false));
         assertEquals(1, FunctionsChallenge.caughtSpeeding(65, false));
